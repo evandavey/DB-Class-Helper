@@ -4,7 +4,7 @@ import os
 import optparse
 from subprocess import Popen, PIPE, STDOUT
 
-sqldir=/usr/local/DB-Class-Helper/sql
+sqldir='/usr/local/DB-Class-Helper/sql'
 dbname='~/dbclass.db'
 
 #!/usr/bin/python
