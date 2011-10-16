@@ -4,6 +4,7 @@ import os
 import optparse
 from subprocess import Popen, PIPE, STDOUT
 
+sqldir=/usr/local/DB-Class-Helper/sql
 dbname='~/dbclass.db'
 
 #!/usr/bin/python
@@ -99,7 +100,7 @@ elif options.reset:
 
 	for f in os.listdir('./sql/'):
 		print 'Importing %s' % f
-		cmd="sqlite3 -header %s < './sql/%s" % (dbname,f)
+		cmd="sqlite3 -header %s < '%s/%s" % (dbname,sqldir,f)
 		print cmd
 		p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
 		output = p.stdout.read()
