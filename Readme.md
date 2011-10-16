@@ -10,14 +10,14 @@
 
 ###Run an sql query
 
-   $ ./dbclass -s '<sql>'
+   $ ./dbclass -s '[sql]'
 
 ###Run a file containing sql
 
-   $ ./dbclass -f '<full file path>'
+   $ ./dbclass -f '[full file path]'
 
 ###Run all sql files in a directory and compare results to .answer files
 
-   $ ./dbclass -d '<directory path>'
+   $ ./dbclass -d '[directory path]'
 
 
