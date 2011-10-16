@@ -98,7 +98,7 @@ elif options.run_sql:
 elif options.reset:
 	cmd="rm %s" % (dbname)
 
-	for f in os.listdir('./sql/'):
+	for f in os.listdir(sqldir):
 		print 'Importing %s' % f
 		cmd="sqlite3 -header %s < '%s/%s" % (dbname,sqldir,f)
 		print cmd
